@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Palatino Linotype', sans-serif;
+    background: #FFFFFF;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    position: relative;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.logo {
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.title {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.title__name {
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 103%;
+    color: #333333;
+    margin: 0px;
+}
+.title__desc {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 140%;
+    color: #333333;
+    margin-top: 0px
+}
+.title__portfolio {
+    border: 2px solid rgb(0, 0, 0);
+    font-family: 'Palatino Linotype';
+    font-style: normal;
+    padding: 0;
+}
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 103%;
+}
+
+.page {
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+}
+.page:hover .page-info{
+    width: 260px;
+}
+.page:hover .page__img{
+    transform: scale(1.2);
+}
+.scale {
+    display: inline-block;
+    overflow: hidden;
+}
+.page:hover .page-info-wrapper{
+    transform: translateX(-170px);
+}
+.page__img {
+    display: block;
+    border: none;
+    transition: all 1s;
+}
+.page-info-wrapper{
+    transition: all 1s;
+}
+.page-info {
+    position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  height: 99.5%;
+  width: 40%;
+  transition: all 1s;
+}
+.page-info-wrapper__number {
+    font-family: 'Palatino Linotype';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69px;
+    color: #808080;
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-bottom: 0;
+    
+}
+.page-info-wrapper__desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 118%;
+    color: #FFFFFF;
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 10PX;
+}
+.page-info-wrapper__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 205px;
+    margin-top: 0px;
+}
