@@ -388,6 +388,16 @@ a {
     padding: 0 15px;
   }
 
+.tabs__content {
+  padding: 50px 10px;
+  display: none;
+  font-family: 'Palatino Linotype';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+}
+
   .logo {
     margin-top: 16px;
     margin-left: 15px;
