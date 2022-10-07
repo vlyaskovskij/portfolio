@@ -1,64 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Planner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Подключаем стили проекта -->
-    <link rel="stylesheet" href="css/app.min.css" />
-  </head>
 
-  <body>
-    <h1 class="title">Daily Planner</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <title>My Portfolio</title>
+  <link href="http://fonts.cdnfonts.com/css/palatino-linotype" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/icon.png" type="image/png">
+</head>
+
+<body>
+  <header class="header">
     <div class="container">
-      <div class="tasks">
-        <h2 class="subtitle">3 Tasks</h2>
-        <div class="tasks-items">
-          <div class="tasks-item-wrapper">
-            <buttton class="tasks-item__btn"></buttton>
-            <input
-              type="text"
-              size="40"
-              class="tasks__input"
-              oninput="saveTask()"
-              placeholder="First task"
-            />
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="section-link">
+          <a class="header-link" href="#">Main</a>
+          <a class="header-link" href="#">Skills</a>
+          <a class="header-link" href="#">Contacts</a>
+        </div>
+      </div>
+      <div class="title tabs__content active">
+        <h1 class="title__name">Hello,I'm Vlad</h1>
+        <p class="title__desc">I am Frontend Developer<br>Welcome to my <em class="title__portfolio">Portfolio</em></p>
+      </div>
+      <div class="skills tabs__content">
+        <div class="skill__items">
+          <div class="skills__wrapper">
+            <div class="skill">HTML<img src="img/skill-5.svg" alt="skill"></div>
+            <div class="skill">CSS <img src="img/skill-5.svg" alt="skill"></div>
+            <div class="skill">Adaptive <img src="img/skill-5.svg" alt="skill"></div>
+            <div class="skill">Figma <img src="img/skill-5.svg" alt="skill"></div>
+            <div class="skill">Photoshop<img src="img/skill-4.svg" alt="skill"></div>
+            <div class="skill">GIT <img src="img/skill-4.svg" alt="skill"></div>
+            <div class="skill">SASS <img src="img/skill-4.svg" alt="skill"></div>
           </div>
-          <div class="tasks-item-wrapper">
-            <buttton class="tasks-item__btn"></buttton>
-            <input
-              type="text"
-              size="40"
-              class="tasks__input"
-              oninput="saveTask()"
-              placeholder="Second task"
-            />
-          </div>
-          <div class="tasks-item-wrapper">
-            <buttton class="tasks-item__btn"></buttton>
-            <input
-              type="text"
-              size="40"
-              class="tasks__input"
-              oninput="saveTask()"
-              placeholder="Third task"
-            />
+          <div class="skills__wrapper">
+            <div class="skill">jQuery <img src="img/skill-4.svg" alt="skill"></div>
+            <div class="skill">BEM <img src="img/skill-4.svg" alt="skill"></div>
+            <div class="skill">Bootstrap <img src="img/skill-3.svg" alt="skill"></div>
+            <div class="skill">CSS Animations <img src="img/skill-3.svg" alt="skill"></div>
+            <div class="skill">JavaScript <img src="img/skill-2.svg" alt="skill"></div>
+            <div class="skill">Gulp <img src="img/skill-2.svg" alt="skill"></div>
+            <div class="skill">WordPress <img src="img/skill-2.svg" alt="skill"></div>
           </div>
         </div>
       </div>
-      <div class="tasks">
-        <h2 class="subtitle">HABITS</h2>
-        <div class="habits-items"></div>
-        <buttton class="addhabit">
-          <img src="img/dest/plus.png" alt="plus" />
-        </buttton>
+      <div class="contacts tabs__content">
+        <h2>You can contact me</h2>
+        <div class="contacts__inner">
+          <span>Phone:
+            <a href="tel:+48 560 242 080">+48 560 242 080</a></span>
+          <span>E-mail:
+            <a href="mailto:">vlyaskovskij@gmail.com</a></span>
+            <a href="https://t.me/vlyask"><img src="img/telegram.png" alt="telegram"></a>
+        </div>
+      </div>
+      <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+    </div>
+  </header>
+  <section class="portfolio">
+    <div class="container">
+      <div class="page">
+        <a href="https://vlyaskovskij.github.io/foodnetwork/" class="page__link">
+          <div class="scale">
+            <img class="page__img" src="img/page1.jpg" alt="page1">
+          </div>
+          <div class="page-info">
+            <div class="page-info-wrapper">
+              <p class="page-info-wrapper__number">01</p>
+              <p class="page-info-wrapper__desc">Food delivery</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="page">
+        <a href="https://vlyaskovskij.github.io/CoffeStyle/"
+          class="page__link">
+          <div class="scale">
+            <img class="page__img" src="img/page2.jpg" alt="page2">
+          </div>
+          <div class="page-info">
+            <div class="page-info-wrapper">
+              <p class="page-info-wrapper__number">02</p>
+              <p class="page-info-wrapper__desc">Internet Shop Coffe Style </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="page">
+        <a href="https://vlyaskovskij.github.io/castaway/"
+          class="page__link">
+          <div class="scale">
+            <img class="page__img" src="img/page3.jpg" alt="page3">
+          </div>
+          <div class="page-info">
+            <div class="page-info-wrapper">
+              <p class="page-info-wrapper__number">03</p>
+              <p class="page-info-wrapper__desc">Podcast Studio Castaway</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="page">
+        <a href="https://vlyaskovskij.github.io/ukrtechalians/" class="page__link">
+          <div class="scale">
+            <img class="page__img" src="img/page4.jpg" alt="page4">
+          </div>
+          <div class="page-info">
+            <div class="page-info-wrapper">
+              <p class="page-info-wrapper__number">04</p>
+              <p class="page-info-wrapper__desc">Labor protection company Ukrtehalans</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="page">
+        <a href="https://vlyaskovskij.github.io/wawe/" class="page__link">
+          <div class="scale">
+            <img class="page__img" src="img/page5.jpg" alt="page5">
+          </div>
+          <div class="page-info">
+            <div class="page-info-wrapper">
+              <p class="page-info-wrapper__number">05</p>
+              <p class="page-info-wrapper__desc">Surf School</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-    <!-- Подключаем скрипты проекта -->
-    <script src="js/app.js"></script>
-  </body>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
